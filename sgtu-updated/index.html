@@ -1,0 +1,1521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!--Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ***** TAILWIND CSS  ***** -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!--Mean menu.css-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--Owl carousel-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <!--Owl Theme-->
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <!--=== Magnific Popup Min CSS ===-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
+    <!--Flat icon-->
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <!--Remix icon-->
+    <link rel="stylesheet" href="assets/css/remixicon.css">
+    <!--Odometer-->
+    <link rel="stylesheet" href="assets/css/odometer.min.css">
+    <!--Aos css-->
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <!--Style css-->
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!--Responsive css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/sgtu_favicon.png">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-53MJLXC');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Include Swiper CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <style>
+        .full-width-image-container {
+            width: 100%;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+
+        .responsive-full-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    </style>
+    <style>
+        /* Hide Scrollbar but keep scroll working */
+        .scroll-container {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .scroll-container::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari, Opera */
+        }
+    </style>
+    <style>
+        /* General Hero Section */
+        .hero-banner {
+            position: relative;
+            width: 100%;
+            min-height: 80vh;
+            overflow: hidden;
+        }
+
+        /* Desktop Background */
+        .hero-banner .hero-bg {
+            background: url('assets/images/Quality-Education-Banner.jpg') top center/cover no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        /* Content Wrapper - Aligns Form Right */
+        .hero-banner .content-wrapper {
+            position: relative;
+            z-index: 2;
+            min-height: 70vh;
+            /* same height as banner */
+            display: flex;
+            align-items: center;
+            /* vertically middle */
+            justify-content: flex-end;
+            /* push form to right */
+            padding-right: 5%;
+            /* spacing from edge */
+        }
+
+        /* Form Box */
+        .hero-banner .form-box {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            background: #fff;
+            padding: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        /* Mobile Banner Image */
+        .mobile-banner {
+            background: url('assets/images/Quality-Education-Banner1.jpg') top center/cover no-repeat;
+            width: 100%;
+            height: 250px;
+            /* adjust as needed */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 991px) {
+            .hero-banner {
+                min-height: auto;
+            }
+
+            .hero-banner .hero-bg {
+                background: url('assets/images/Quality-Education-Banner1.jpg') top center/cover no-repeat;
+                position: relative;
+                height: 400px;
+                /* adjust for mobile */
+            }
+
+            .hero-banner .content-wrapper {
+                flex-direction: column;
+                min-height: auto;
+                padding: 20px;
+            }
+
+            .hero-banner .form-box {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    <style>
+        .recruiters-container {
+            border: 2px solid #FF6D00;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .swiper-slide img {
+            max-width: 150px;
+            height: auto;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .swiper-slide img:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+
+    <style>
+        @media (max-width: 768px) {
+            .col-12 {
+                width: 100%;
+                min-height: auto;
+            }
+        }
+    </style>
+
+    <style>
+        .blueBg-1 {
+            background-color: #111d5e;
+        }
+
+        .sectionTitle {
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+
+        .admProgTabList .active {
+            background-color: #0056b3;
+            color: #fff;
+        }
+
+
+
+        .admProgWrap ul {
+            padding-left: 1rem;
+        }
+
+        .aacName {
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+        .admProgmContentWrap .row>div {
+            margin-bottom: 1rem;
+        }
+
+        .admProgmContentWrap ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        .accordion .accordion-header {
+            font-weight: bold;
+        }
+
+        .admProgTabList {
+            list-style: none;
+            padding-left: 0;
+        }
+    </style>
+    <style>
+        @media (max-width: 576px) {
+            .lsq-portal-widget {
+                min-height: 450px !important;
+            }
+        }
+    </style>
+
+
+
+    <!--=== Title ===-->
+    <title>SGTU Online</title>
+    <link rel="icon" type="image/png" href="assets/images/sgtu_favicon.png">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53MJLXC" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Start Navbar Area -->
+    <div class="navbar-area nav-bg-2">
+        <div class="container-fluid">
+            <nav class="navbar navbar-light d-flex justify-content-between align-items-center compact-navbar">
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/sgtu-logo-new0708.png" alt="logo" width="150">
+                </a>
+
+                <!-- Enquire Now Button -->
+                <a href="#hero">
+                    <button type="button" class="default-btn btn">Enquire Now</button>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <!-- End Navbar Area -->
+
+    <!-- Hero Section -->
+    <div class="container-fluid hero-banner d-none d-md-block">
+        <!-- Background -->
+        <div class="hero-bg"></div>
+
+        <!-- Form on Right Side -->
+        <div class="content-wrapper">
+            <div class="form-box">
+                <div class="npf_wgts" data-height="400px" data-w="19a6d5524002708cc2744b3bbd21061a"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Layout -->
+    <div class="container-fluid d-md-none">
+        <div class="row">
+            <div class="col-12 mobile-banner"></div>
+            <div class="col-12 d-flex justify-content-center p-3">
+                <div class="form-box">
+                    <div class="npf_wgts" data-height="400px" data-w="19a6d5524002708cc2744b3bbd21061a"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Recognitions</h2>
+            <div class="row g-3 justify-content-center text-center">
+                <!-- Box 1 -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/accredition/accredation-5.webp" alt="Recognition 1" class="img-fluid" />
+                    </div>
+                </div>
+                <!-- Box 2 -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/accredition/aictc-logo-1.webp" alt="Recognition 2" class="img-fluid" />
+                    </div>
+                </div>
+                <!-- Box 3 -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/accredition/AIU-logo-1.webp" alt="Recognition 3" class="img-fluid" />
+                    </div>
+                </div>
+                <!-- Box 4 -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/accredition/NAAC-A-Grade-Certificate.webp" alt="Recognition 4"
+                            class="img-fluid" />
+                    </div>
+                </div>
+                <!-- Box 5 -->
+                <div class="col-6 col-sm-4 col-md-2">
+                    <div class="border rounded p-3 bg-white h-100 d-flex align-items-center justify-content-center">
+                        <img src="assets/images/accredition//ugc.webp" alt="Recognition 5" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>
+                    Unlock the Best Online Courses and Degrees in India
+                </h2>
+                <p class="lead text-muted mx-auto" style="max-width: 750px;">
+                    Select from a wide range of accredited undergraduate and postgraduate
+                    courses designed to enhance your skills and accelerate your career growth.
+                </p>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Program 4 -->
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/MBA.webp" class="card-img-top" alt="MBA">
+                        <div class="card-body">
+                            <div class="text-primary fw-semibold small">MBA</div>
+                            <h5 class="card-title mt-2">Master of Business Administration</h5>
+                            <div class="d-flex justify-content-between text-muted small mt-2">
+                                <div><i class="bi bi-clock"></i> 2 Years</div>
+                                <div>Fee ₹24,500 / Sem</div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <!-- Learn More triggers modal -->
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#mbaModal">
+                                    Learn More
+                                </button>
+                                <a href="#" class="btn btn-sm text-white"
+                                    style="background-color: #ff6d00; border-color: #ff6d00;">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/MCA.webp" class="card-img-top" alt="MCA">
+                        <div class="card-body">
+                            <div class="text-primary fw-semibold small">MCA</div>
+                            <h5 class="card-title mt-2">Master of Computer Application</h5>
+                            <div class="d-flex justify-content-between text-muted small mt-2">
+                                <div><i class="bi bi-clock"></i> 2 Years</div>
+                                <div>Fee ₹24,500 / Sem</div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <!-- Learn More triggers modal -->
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#mcaModal">
+                                    Learn More
+                                </button>
+                                <a href="#" class="btn btn-sm text-white"
+                                    style="background-color: #ff6d00; border-color: #ff6d00;">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Program 1 -->
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/BBA.webp" class="card-img-top" alt="BBA">
+                        <div class="card-body">
+                            <div class="text-primary fw-semibold small">BBA</div>
+                            <h5 class="card-title mt-2">Bachelor of Business Administration</h5>
+                            <div class="d-flex justify-content-between text-muted small mt-2">
+                                <div><i class="bi bi-clock"></i> 3 Years</div>
+                                <div>Fee ₹14,750 / Sem</div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <!-- Learn More triggers modal -->
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#bbaModal">
+                                    Learn More
+                                </button>
+                                <a href="#" class="btn btn-sm text-white"
+                                    style="background-color: #ff6d00; border-color: #ff6d00;">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Program 2 -->
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/B.Com.webp" class="card-img-top" alt="B.Com">
+                        <div class="card-body">
+                            <div class="text-primary fw-semibold small">B.Com</div>
+                            <h5 class="card-title mt-2">Bachelor of Commerce</h5>
+                            <div class="d-flex justify-content-between text-muted small mt-2">
+                                <div><i class="bi bi-clock"></i> 3 Years</div>
+                                <div>Fee ₹11,500 / Sem</div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <!-- Learn More triggers modal -->
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#bcomModal">
+                                    Learn More
+                                </button>
+                                <a href="#" class="btn btn-sm text-white"
+                                    style="background-color: #ff6d00; border-color: #ff6d00;">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="col-md-6 col-lg-4 col-xl-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/images/BCA.webp" class="card-img-top" alt="BCA">
+                        <div class="card-body">
+                            <div class="text-primary fw-semibold small">BCA</div>
+                            <h5 class="card-title mt-2">Bachelor of Computer Application</h5>
+                            <div class="d-flex justify-content-between text-muted small mt-2">
+                                <div><i class="bi bi-clock"></i> 3 Years</div>
+                                <div>Fee ₹15,500 / Sem</div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-between">
+                                <!-- Learn More triggers modal -->
+                                <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#bcaModal">
+                                    Learn More
+                                </button>
+                                <a href="#" class="btn btn-sm text-white"
+                                    style="background-color: #ff6d00; border-color: #ff6d00;">
+                                    Apply Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================== BBA Modal ================== -->
+                <div class="modal fade" id="bbaModal" tabindex="-1" aria-labelledby="bbaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bbaModalLabel">BBA (Bachelor of Business Administration)
+                                </h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6 class="fw-bold">Program Highlights:</h6>
+                                <ul>
+                                    <li>Develop critical thinking, leadership, communication & teamwork for modern
+                                        business roles.</li>
+                                    <li>Build business acumen & decision-making from day one.</li>
+                                    <li>Learn Marketing, Finance, HR, Analytics & more, then choose your focus.</li>
+                                    <li>Strong base for MBA, PGDM & global certifications.</li>
+                                </ul>
+                                <h6 class="fw-bold mt-3">Career Prospects:</h6>
+                                <p>Business Analyst, Marketing & Sales Executive, HR Executive, Financial Analyst</p>
+                                <ul class="list-unstyled">
+                                    <li><strong>Duration:</strong> 3 Years (6 Semesters)</li>
+                                    <li><strong>Fee:</strong> ₹ 14,750 per semester</li>
+                                    <li><strong>Eligibility:</strong> 12th Pass</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-warning">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================== B.Com Modal ================== -->
+                <div class="modal fade" id="bcomModal" tabindex="-1" aria-labelledby="bcomModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bcomModalLabel">B.Com (Bachelor of Commerce)</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6 class="fw-bold">Program Highlights:</h6>
+                                <ul>
+                                    <li>Holistic learning with a blend of theory, case studies, and practical projects.
+                                    </li>
+                                    <li>Specialized modules on GST, auditing, corporate finance, and taxation.</li>
+                                    <li>Training in digital accounting tools such as Tally, MS Excel, and ERP systems.
+                                    </li>
+                                    <li>Opportunities for internships, live projects, and industry exposure to bridge
+                                        classroom learning
+                                        with practice.</li>
+                                </ul>
+                                <h6 class="fw-bold mt-3">Career Prospects:</h6>
+                                <p>Accounts Executive, Business Associate, Financial Analyst, Tax Consultant, Auditor,
+                                    Financial
+                                    Planning Analyst</p>
+                                <ul class="list-unstyled">
+                                    <li><strong>Duration:</strong> 3 Years (6 Semesters)</li>
+                                    <li><strong>Fee:</strong> ₹ 11,500 per semester</li>
+                                    <li><strong>Eligibility:</strong> 12th Pass</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-warning">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================== BCA Modal ================== -->
+                <div class="modal fade" id="bcaModal" tabindex="-1" aria-labelledby="bcaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="bcaModalLabel">BCA (Bachelor of Computer Application)</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6 class="fw-bold">Program Highlights:</h6>
+                                <ul>
+                                    <li>Industry-aligned curriculum with latest IT trends (AI, Cloud, Cybersecurity).
+                                    </li>
+                                    <li>Hands-on coding, projects, hackathons & simulations.</li>
+                                    <li>Learn Python, Java, SQL, Git, AWS, Power BI & more.</li>
+                                    <li>Expert faculty & mentorship from industry professionals.</li>
+                                </ul>
+                                <h6 class="fw-bold mt-3">Career Prospects:</h6>
+                                <p>Full-stack Developer, Data Analyst, Information Security Analyst, UI/UX Associate,
+                                    Network Engineer
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li><strong>Duration:</strong> 3 Years (6 Semesters)</li>
+                                    <li><strong>Fee:</strong> ₹ 15,500 per semester</li>
+                                    <li><strong>Eligibility:</strong> 12th Pass with Mathematics</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-warning">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================== MBA Modal ================== -->
+                <div class="modal fade" id="mbaModal" tabindex="-1" aria-labelledby="mbaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="mbaModalLabel">MBA (Master of Business Administration)</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6 class="fw-bold">Program Highlights:</h6>
+                                <ul>
+                                    <li>Industry-aligned curriculum with real-world case studies.</li>
+                                    <li>Flexibility to specialize in Finance, Marketing, HR, Analytics, or Strategy.
+                                    </li>
+                                    <li>Access to career services, placement support, and global alumni network.</li>
+                                    <li>Mentorship from industry leaders and faculty from top institutions.</li>
+                                </ul>
+                                <h6 class="fw-bold mt-3">Career Prospects:</h6>
+                                <p>Brand Manager, Financial Analyst, Health Services Consultant, Business Analyst,
+                                    Strategy Analyst</p>
+                                <ul class="list-unstyled">
+                                    <li><strong>Duration:</strong> 2 Years (4 Semesters)</li>
+                                    <li><strong>Fee:</strong> ₹ 24,500 per semester</li>
+                                    <li><strong>Eligibility:</strong> Any Graduation</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-warning">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ================== MCA Modal ================== -->
+                <div class="modal fade" id="mcaModal" tabindex="-1" aria-labelledby="mcaModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="mcaModalLabel">MCA (Master of Computer Application)</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6 class="fw-bold">Program Highlights:</h6>
+                                <ul>
+                                    <li>Recognized and industry-accepted qualification with global relevance.</li>
+                                    <li>Learn at your own pace with weekend live classes, recorded sessions, and 24×7
+                                        digital access.
+                                    </li>
+                                    <li>Train on platforms such as GitHub, Google Cloud, AWS, React, MySQL, MongoDB,
+                                        TensorFlow, and
+                                        Docker.</li>
+                                    <li>Learn directly from industry experts, research scholars, and experienced IT
+                                        professionals.</li>
+                                </ul>
+                                <h6 class="fw-bold mt-3">Career Prospects:</h6>
+                                <p>Software Developer, Data Scientist, Cloud Engineer, AI Specialist, System Architect
+                                </p>
+                                <ul class="list-unstyled">
+                                    <li><strong>Duration:</strong> 2 Years (4 Semesters)</li>
+                                    <li><strong>Fee:</strong> ₹ 24,500 per semester</li>
+                                    <li><strong>Eligibility:</strong> Any Graduation</li>
+                                </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#" class="btn btn-warning">Apply
+                                    Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Start Campus Information-->
+    <div class="campus-information-area pb-30" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="campus-image">
+                        <img src="assets/images/what-makes-online.JPG" alt="Image" height="520" width="680">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="campus-content style-2">
+                        <div class="campus-title">
+                            <h2>What Makes SGTU Online the Right Choice?</h2>
+                            <ul>
+                                <li style="font-size: 20px;"><strong>100% Online Mode –</strong> Learn with complete
+                                    freedom, no physical
+                                    attendance required.</li>
+                                <li style="font-size: 20px;"><strong>Flexible & Personalized Learning –</strong> Study
+                                    from anywhere,
+                                    anytime
+                                    with easy-to-use classes and recordings.</li>
+                                <li style="font-size: 20px;"><strong>High Success Rate –</strong> Continuous support
+                                    ensures early
+                                    success,
+                                    fair reappear chances, and smooth degree completion.</li>
+                                <li style="font-size: 20px;"><strong>Masterclasses, Workshops & Competitions –</strong>
+                                    Learn from
+                                    experts,
+                                    join hackathons, pitch events, and real-world challenges.</li>
+                                <li style="font-size: 20px;"><strong>Hands-On, Job-Ready Learning –</strong> Build a
+                                    strong portfolio
+                                    with
+                                    live projects, case studies, and simulations.</li>
+                                <li style="font-size: 20px;"><strong>Quality Learning Made Affordable and Accessible
+                                        –</strong>
+                                    Affordable fees,
+                                    scholarships, and EMI options for accessible education.</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="default-btn btn">Contact our Counsellor<i class="flaticon-next"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--End Campus Information-->
+
+    <!-- Start Testimonial Section -->
+    <section class="pt-5 pb-5 bg-light students-say">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center pb-4">
+                <h2 class="fs-1 fw-bold">
+                    <span class="d-inline-flex align-items-center gap-2">
+                        <span style="color: #111d5e;">Student Testimonials</span>
+                    </span>
+                </h2>
+                <div class="d-flex gap-2 mt-3 mt-md-0">
+                    <button class="btn btn-outline-secondary custom-prev-arrow lms-key-prev p-2">
+                        <img src="assets/images/vector-left.svg" alt="Previous">
+                    </button>
+                    <button class="btn btn-outline-secondary custom-next-arrow lms-key-next p-2 disabled">
+                        <img src="assets/images/vector-right.svg" alt="Next">
+                    </button>
+                </div>
+            </div>
+
+            <!-- Scroll Container -->
+            <div class="scroll-container d-flex gap-3 overflow-auto pb-3">
+                <!-- Card 1 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            Earning my BBA degree from SGT University equipped me with both academic knowledge and
+                            practical skills. The
+                            education I received here has been instrumental in advancing my professional career.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Ankita Raw</h6>
+                                <small class="text-secondary">SGT University</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            My three years at SGT University were truly transformative. The mentors here are a constant
+                            source of
+                            inspiration, providing each student with the guidance needed to succeed in life.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Abhishek</h6>
+                                <small class="text-secondary">SGT University</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            Studying at SGT University was an enriching experience, filled with numerous learning
+                            opportunities. I'm
+                            grateful to SGT for helping me secure a position at AdmitKard with a package of 10 LPA.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Kajal Punia</h6>
+                                <small class="text-secondary">SGT University</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            I now have a platform to advance my career broadly and spread my wings as far as I can,
+                            thanks to SGT
+                            University. Building a structure is simple, but without pillars, it is nothing. Our
+                            teachers, who have
+                            supported us throughout, serve as our pillars.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Sachin Yadav</h6>
+                                <small class="text-secondary">B.Com Honours Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            I have my wholehearted gratitude towards the university for nurturing my growth. They guide
+                            us at every step
+                            so that we ultimately excel in every academic area. The entire faculty and department leave
+                            no stone
+                            unturned to shape one’s future.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Tanu Saini</h6>
+                                <small class="text-secondary">B.Com Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            SGT University has been a wonderful and memorable experience for me. My intellectual and
+                            social abilities
+                            were much enhanced by the guidance and support of the teachers and mentors.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Divya Shokeen</h6>
+                                <small class="text-secondary">BCA Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 7 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            Through seminars, webinars, national and international symposiums, industrial visits, and
+                            workshops, SGT
+                            University has given me numerous chances to increase my knowledge.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Sumit Kumar</h6>
+                                <small class="text-secondary">BCA Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 8 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            Thanks to my SGT campus placement, I started working. I also want to express my gratitude to
+                            my engineering
+                            professors for always encouraging me to work harder and for their assistance during this
+                            journey.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Vinay Sharma</h6>
+                                <small class="text-secondary">BCA Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 9 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            It is a blessing for me to study the best MBA course at the Faculty of Commerce and
+                            Management at SGT
+                            University, where I have learned skills like time management, teamwork, and leadership. The
+                            faculty and
+                            mentors helped me cultivate academic and interpersonal skills.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Sree Chaitra</h6>
+                                <small class="text-secondary">MBA Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 10 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            The faculty is knowledgeable and supportive, the infrastructure is top-notch, and the
+                            exposure we get to
+                            industry events and guest lectures is unparalleled. I can confidently say that SGT
+                            University is one of the
+                            best universities in Gurgaon, Haryana.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Shivani</h6>
+                                <small class="text-secondary">MBA Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 11 -->
+                <div class="card flex-shrink-0" style="min-width:300px; max-width:300px; border: 2px solid #ff6d00;">
+                    <div class="card-body">
+                        <p class="text-muted">
+                            Pursuing MCA. My two-year journey at SGT University is memorable and amazing. SGTU provides
+                            a great platform
+                            to enhance your skills. During placements, I got 2 offer letters and am discussing with my
+                            placement advisor
+                            which one is better for me. The CRC Department is good, supportive, and hard-working.
+                        </p>
+                        <div class="d-flex align-items-center gap-3 pt-3">
+                            <div>
+                                <h6 class="fw-semibold mb-0">Nishtha Gupta</h6>
+                                <small class="text-secondary">MCA Student</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Testimonial Section -->
+
+    <!-- Start Scholarship Info Section -->
+    <div class="scholarship-section py-5" id="about">
+        <div class="container">
+            <div class="section-title text-center m-auto py-3">
+                <h2>About SGTU Online</h2>
+            </div>
+            <div class="row align-items-center">
+                <!-- Left Column: Text Content -->
+                <div class="col-lg-6">
+                    <div class="scholarship-text-wrap">
+                        <div class="scholarship-title">
+                            <p style="font-size: 20px; text-align: justify;">SGT University proudly launches its
+                                UGC-entitled Online Degree
+                                Programs — designed for
+                                learners who want quality
+                                education with the flexibility of learning anytime, anywhere. Step into the future with
+                                SGT University, a NAAC A+
+                                accredited institution, trusted since 2002. From its humble beginnings as SGT Dental
+                                College, it has evolved into a
+                                multidisciplinary hub with 10,000+ students shaping their careers.</p>
+                            <p style="font-size: 20px; text-align: justify;">Your journey towards a recognized degree
+                                and a future-ready
+                                career begins here — with
+                                SGTU Online.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="col-lg-6">
+                    <div class="scholarship-image-wrap" style="position: relative;">
+                        <img src="assets/images/sgtu.jpg" alt="Convocation Image" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Scholarship Info Section -->
+
+
+    <!-- Our Recruiters -->
+    <div class="recruiters-container text-center py-5">
+        <h2 class="mb-4">Our Graduates Work At</h2>
+        <div class="swiper mySwiper mt-5">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/byju.webp"
+                        alt="byju">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/cvent.webp"
+                        alt="cvent">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/hcl.webp" alt="hcl">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/hikeedu.webp"
+                        alt="hikeedu"></div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/IBM_logo.webp"
+                        alt="IBM_logo"></div>
+                <div class="swiper-slide justify-content-center"><img
+                        src="assets/images/placements/idfc-first-bank.webp" alt="idfc"></div>
+                <div class="swiper-slide justify-content-center"><img
+                        src="assets/images/placements/learning-routes.webp" alt="learning"></div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/lido.webp"
+                        alt="lido">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/m3m.webp" alt="m3m">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/nsic.webp"
+                        alt="nsic">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/qrg.webp" alt="qrg">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/smc.webp" alt="smc">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/deloitte.png"
+                        alt="smc">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/kpmg-logo.png"
+                        alt="smc">
+                </div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/srvn-education.webp"
+                        alt="srvn"></div>
+                <div class="swiper-slide justify-content-center"><img src="assets/images/placements/uni-california.webp"
+                        alt="uni"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admission Process -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5"><span>Admission Process of SGTU Online Programs</span><br>From First Click to
+                Final
+                Confirmation – Your Enrollment Made Easy</h2>
+            <div class="row text-center">
+
+                <!-- Step 1 -->
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <div class="p-4 rounded h-100 text-white border" style="background-color:#042c64;">
+                        <i class="fas fa-file-alt fa-2x mb-3"></i>
+                        <p class="mb-0 text-white">Online form submission: Visit website and fill out application form.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <div class="p-4 rounded h-100 text-white border" style="background-color:#ff6d00;">
+                        <i class="fas fa-upload fa-2x mb-3"></i>
+                        <p class="mb-0 text-white">Document upload portal: Upload required documents.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <div class="p-4 rounded h-100 text-white border" style="background-color:#042c64;">
+                        <i class="fas fa-users fa-2x mb-3"></i>
+                        <p class="mb-0 text-white">Admissions team review: Eligibility check and counselling.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <div class="p-4 rounded h-100 text-white border" style="background-color:#ff6d00;">
+                        <i class="fas fa-envelope-open-text fa-2x mb-3"></i>
+                        <p class="mb-0 text-white">Offer letter via email: Receive admission offer letter.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <div class="p-4 rounded h-100 text-white border" style="background-color:#042c64;">
+                        <i class="fas fa-credit-card fa-2x mb-3"></i>
+                        <p class="mb-0 text-white">Secure payment gateway: Fee payment and enrollment.</p>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="col-md-4 col-lg-2 mb-4">
+                    <div class="p-4 rounded h-100 text-white border" style="background-color:#ff6d00;">
+                        <i class="fas fa-chalkboard-teacher fa-2x mb-3"></i>
+                        <p class="mb-0 text-white">Platform and faculty introduction: Virtual orientation session.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!--Start Copyright Area-->
+    <div class="copyright-area">
+        <div class="container">
+            <div class="copyright">
+                <div class="row text-center text-md-start align-items-center">
+
+                    <!-- Logo -->
+                    <div class="col-md-3 col-12 mb-3 mb-md-0">
+                        <img src="assets/images/sgtu-logo-new0708.png" alt="SGT University" style="max-height: 50px;">
+                    </div>
+
+                    <!-- Address -->
+                    <div class="col-md-3 col-12 mb-3 mb-md-0">
+                        <p class="mb-0" style="color: #111d5e;"><strong>Address:</strong><br>Chandu-Budhera,
+                            Gurugram-Badli Road,<br> Gurugram,
+                            Haryana – 122505</p>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="col-md-3 col-12 mb-3 mb-md-0">
+                        <p class="mb-0" style="color: #111d5e;"><strong>Admission Helpline:</strong><br>📞 9289735414 |
+                            9289735415</p>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="col-md-3 col-12">
+                        <p class="mb-0" style="color: #111d5e;"><strong>Email:</strong><br>✉️ info@sgtuonline.com</p>
+                    </div>
+
+                </div>
+                <!-- Bottom Copyright -->
+                <div class="row mt-3">
+                    <div class="col-12 text-center">
+                        <p class="mb-0" style="color: #111d5e;">COPYRIGHT ©2025 SGT University | All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--End Copyright Area-->
+
+    <!-- Start Go Top Area -->
+    <div class="go-top">
+        <i class="ri-arrow-up-s-line"></i>
+        <i class="ri-arrow-up-s-line"></i>
+    </div>
+    <!-- End Go Top Area -->
+
+    <!--=== Jquery Min js ===-->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <!--=== Bootstrap bundle Min js ===-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--=== MeanMenu js ===-->
+    <script src="assets/js/jquery.meanmenu.js"></script>
+    <!--=== Owl Carousel Min js ===-->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!--=== Owl Carousel Thumbs Min js ===-->
+    <script src="assets/js/carousel-thumbs.min.js"></script>
+    <!--=== Magnific popup Min js ===-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Aos js -->
+    <script src="assets/js/aos.js"></script>
+    <!-- Odometer js -->
+    <script src="assets/js/odometer.min.js"></script>
+    <!-- Appear js -->
+    <script src="assets/js/appear.min.js"></script>
+    <!-- Form Validator js -->
+    <script src="assets/js/form-validator.min.js"></script>
+    <!-- Contact Form Script js -->
+    <script src="assets/js/contact-form-script.js"></script>
+    <!--=== AjaxChimp js ===-->
+    <script src="assets/js/ajaxchimp.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--=== Custom js ===-->
+    <script src="assets/js/custom.js"></script>
+
+    <!-- Swiper Initialization Script -->
+    <script>
+        var swiper = new Swiper(".testimonial-swiper", {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 1,
+                },
+                992: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+    </script>
+    <script>
+        var swiper1 = new Swiper(".eduction-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 2000, // Change slide every 3 seconds
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                576: {
+                    slidesPerView: 2,
+                }
+            }
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 6,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 6 }
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const buttons = document.querySelectorAll(".list-group-item button");
+            const programContent = document.querySelector(".program-content");
+
+            // Function to load program content
+            function loadProgramContent(dataSrc) {
+                if (dataSrc) {
+                    fetch(dataSrc)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error("Network response was not ok");
+                            }
+                            return response.text();
+                        })
+                        .then(html => {
+                            programContent.innerHTML = html;
+                            initializeTabs(); // Re-initialize tabs after loading new content
+
+                            // Ensure content appears correctly in mobile view
+                            if (window.innerWidth < 768) {
+                                programContent.scrollIntoView({ behavior: "smooth", block: "start" });
+                            }
+                        })
+                        .catch(error => console.error("Error loading the program:", error));
+                }
+            }
+
+            // Automatically load the first tab (AHS) on page load
+            const firstButton = document.querySelector(".list-group-item button");
+            if (firstButton) {
+                firstButton.classList.add("active"); // Highlight the first button
+                loadProgramContent(firstButton.getAttribute("data-src"));
+            }
+
+            // Handle clicks on program tabs (Ensures only one opens at a time)
+            buttons.forEach(button => {
+                button.addEventListener("click", function () {
+                    buttons.forEach(btn => btn.classList.remove("active")); // Remove active class from all
+                    this.classList.add("active"); // Add active class to clicked tab
+
+                    loadProgramContent(this.getAttribute("data-src"));
+                });
+            });
+
+            function initializeTabs() {
+                // Select tab buttons & content **after** the new content is loaded
+                const tabButtons = document.querySelectorAll(".aptBtn");
+                const tabContents = document.querySelectorAll(".apcAccdList");
+
+                if (tabButtons.length > 0) {
+                    // Open the first tab by default
+                    tabButtons[0].classList.add("active");
+                    tabContents.forEach(content => content.classList.remove("active"));
+                    document.getElementById(tabButtons[0].getAttribute("data-title")).classList.add("active");
+
+                    // Add click event to all tab buttons
+                    tabButtons.forEach(button => {
+                        button.addEventListener("click", function () {
+                            const target = this.getAttribute("data-title");
+
+                            // Close all other tabs
+                            tabButtons.forEach(btn => btn.classList.remove("active"));
+                            tabContents.forEach(content => content.classList.remove("active"));
+
+                            // Open the selected tab
+                            this.classList.add("active");
+                            document.getElementById(target).classList.add("active");
+                        });
+                    });
+                }
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const tabs = document.querySelectorAll(".aptBtn");
+            const tabContents = document.querySelectorAll(".apcAccdList");
+            const accordions = document.querySelectorAll(".apcAccdHead");
+
+            // Tab Switching Logic (Only One Tab Open)
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", function () {
+                    // Remove active class from all tabs
+                    tabs.forEach((t) => t.classList.remove("active"));
+                    this.classList.add("active");
+
+                    // Hide all tab contents
+                    tabContents.forEach((content) => {
+                        content.classList.remove("active");
+                        content.querySelectorAll(".apcAccdContent").forEach(acc => acc.style.display = "none"); // Close all accordions when switching tabs
+                    });
+
+                    // Show the selected tab content
+                    const target = this.getAttribute("data-title");
+                    document.getElementById(target).classList.add("active");
+                });
+            });
+
+            // Accordion Toggle Logic (Only One Accordion Open at a Time)
+            document.addEventListener("click", function (event) {
+                if (event.target.classList.contains("apcAccdHead")) {
+                    const currentAccordion = event.target.parentElement;
+                    const currentContent = currentAccordion.querySelector(".apcAccdContent");
+
+                    // Close all accordions inside the active tab
+                    const activeTab = document.querySelector(".apcAccdList.active");
+                    activeTab.querySelectorAll(".apcAccdItem").forEach(item => {
+                        item.classList.remove("active");
+                        item.querySelector(".apcAccdContent").style.display = "none";
+                    });
+
+                    // Toggle the clicked accordion
+                    currentAccordion.classList.add("active");
+                    currentContent.style.display = "block";
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const buttons = document.querySelectorAll('.aptlBtn');
+            const wrap = document.getElementById('admProgWrap');
+            const selectedFaculty = document.querySelector('.admSelectedFaculty');
+            const closeBtn = document.querySelector('.apmClose');
+
+            function loadContent(src, btn) {
+                fetch(src)
+                    .then(response => response.text())
+                    .then(html => {
+                        wrap.innerHTML = html;
+                        buttons.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        selectedFaculty.textContent = btn.textContent;
+                    })
+                    .catch(() => {
+                        wrap.innerHTML = `<p class="text-danger">Failed to load content.</p>`;
+                    });
+            }
+
+            // Auto-load first tab on page load
+            if (buttons.length > 0) {
+                loadContent(buttons[0].getAttribute('data-src'), buttons[0]);
+            }
+
+            buttons.forEach(button => {
+                button.addEventListener('click', function () {
+                    loadContent(this.getAttribute('data-src'), this);
+                });
+            });
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', function () {
+                    wrap.innerHTML = '';
+                    selectedFaculty.textContent = '';
+                    buttons.forEach(btn => btn.classList.remove('active'));
+                });
+            }
+        });
+    </script>
+    <!-- Script for UG/PG Toggle -->
+    <script>
+        document.querySelectorAll('.progTypeBtn').forEach(btn => {
+            btn.addEventListener('click', function () {
+                // Switch tab button active styles
+                document.querySelectorAll('.progTypeBtn').forEach(b => {
+                    b.classList.remove('active', 'btn-light');
+                    b.classList.add('btn-outline-light');
+                });
+                this.classList.add('active', 'btn-light');
+                this.classList.remove('btn-outline-light');
+
+                // Show the correct list
+                const target = this.getAttribute('data-target');
+                document.querySelectorAll('.progList').forEach(list => {
+                    list.style.display = 'none';
+                    list.querySelectorAll('.aptlBtn').forEach(b => b.classList.remove('active'));
+                });
+                const activeList = document.getElementById(target);
+                activeList.style.display = 'block';
+
+                // Make the FIRST item active
+                const firstBtn = activeList.querySelector('.aptlBtn');
+                if (firstBtn) {
+                    firstBtn.classList.add('active');
+
+                    // Trigger content load for the first item
+                    const src = firstBtn.getAttribute('data-src');
+                    if (src) {
+                        loadProgramData(src);
+                    }
+                }
+            });
+        });
+
+        // Click handler for program list buttons
+        document.addEventListener('click', function (e) {
+            if (e.target.classList.contains('aptlBtn')) {
+                // Remove active from all in same list
+                e.target.closest('.progList').querySelectorAll('.aptlBtn')
+                    .forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Load content
+                const src = e.target.getAttribute('data-src');
+                if (src) {
+                    loadProgramData(src);
+                }
+            }
+        });
+
+        // Function to load external program data
+        function loadProgramData(src) {
+            fetch(src + '.html')
+                .then(res => res.text())
+                .then(data => {
+                    document.getElementById('admProgWrap').innerHTML = data;
+                })
+                .catch(err => {
+                    document.getElementById('admProgWrap').innerHTML = "<p class='text-danger'>Failed to load program details.</p>";
+                });
+        }
+
+        // Load default UG first program on page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const firstUG = document.querySelector('#ug .aptlBtn');
+            if (firstUG) {
+                const src = firstUG.getAttribute('data-src');
+                if (src) {
+                    loadProgramData(src);
+                }
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const slider = document.querySelector('.scroll-container');
+            const prevBtn = document.querySelector('.custom-prev-arrow');
+            const nextBtn = document.querySelector('.custom-next-arrow');
+            if (!slider || !prevBtn || !nextBtn) return;
+
+            // Figure out how far to scroll (one card + gap)
+            const getStep = () => {
+                const card = slider.querySelector('.card');
+                if (!card) return 320;
+                const gap = parseFloat(getComputedStyle(slider).columnGap) || 16; // Bootstrap gap-3 ≈ 1rem (16px)
+                return card.getBoundingClientRect().width + gap;
+            };
+
+            const updateArrows = () => {
+                const maxScroll = slider.scrollWidth - slider.clientWidth - 1;
+                const atStart = slider.scrollLeft <= 0; const atEnd = slider.scrollLeft >= maxScroll;
+
+                prevBtn.disabled = atStart;
+                nextBtn.disabled = atEnd;
+
+                // Optional: mirror Bootstrap's disabled look via class as well
+                prevBtn.classList.toggle('disabled', atStart);
+                nextBtn.classList.toggle('disabled', atEnd);
+            };
+
+            prevBtn.addEventListener('click', () => {
+                slider.scrollBy({ left: -getStep(), behavior: 'smooth' });
+            });
+
+            nextBtn.addEventListener('click', () => {
+                slider.scrollBy({ left: getStep(), behavior: 'smooth' });
+            });
+
+            // Keep buttons in sync while user drags/scrolls
+            slider.addEventListener('scroll', updateArrows);
+
+            // Optional: allow shift+wheel (or horizontal wheel) to move cards
+            slider.addEventListener('wheel', (e) => {
+                // if user scrolls horizontally, or holds shift and scrolls
+                const horizontal = Math.abs(e.deltaX) > Math.abs(e.deltaY) || e.shiftKey;
+                if (horizontal) {
+                    e.preventDefault();
+                    slider.scrollLeft += (e.deltaX || e.deltaY);
+                }
+            }, { passive: false });
+
+            // Initial state (also clears any hard-coded disabled on markup)
+            updateArrows();
+        });
+    </script>
+    <script type="text/javascript">
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://widgets.in6.nopaperforms.com/emwgts.js";
+        document.body.appendChild(s);
+    </script>
+</body>
+
+</html>

@@ -739,6 +739,15 @@ Preloader Style
 .read-more-btn.white-color:hover {
   color: #ff6d00;
 }
+/* Mobile responsiveness */
+@media (max-width: 576px) {
+  .default-btn {
+    font-size: 14px; /* slightly smaller text */
+    padding: 10px 20px; /* reduce padding */
+    width: 100%; /* full-width on mobile */
+    display: block;
+  }
+}
 
 /*Section-title
 ======================================================*/
@@ -3934,7 +3943,7 @@ Footer Style
 CopyRight Style
 ======================================================*/
 .copyright-area {
-  background-color: #1f2c75;
+  background-color: #ffffff;
 }
 
 .copyright {
@@ -3969,6 +3978,12 @@ CopyRight Style
 }
 .copyright .social-content ul li a:hover {
   color: #ff6d00;
+}
+
+@media only screen and (max-width: 767px) {
+  .copyright-area {
+    background-color: #fff !important;
+  }
 }
 
 /*
@@ -4316,6 +4331,7 @@ Go To Top Style
   color: #ffffff;
   transition: 0.5s;
   font-size: 26px;
+  visibility: visible;
 }
 .go-top i:last-child {
   opacity: 0;
